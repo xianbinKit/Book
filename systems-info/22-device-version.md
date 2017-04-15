@@ -1,4 +1,4 @@
-# 2.2 Device Version
+# Device Version
 
 
 
