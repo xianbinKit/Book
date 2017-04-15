@@ -1,13 +1,10 @@
-1.1 Document/Bundle 读取
+# 1.1 Document/Bundle 读取
 
-!FILENAME Bunle.swift
-
-!FILENAME test.js
+!FILENAME testBundle.swift
 
 ```Swift
-var a = 10;
-a = a + 1;
-console.log(a);
+let url = Bundle.main.url(forResource: "CES2014", withExtension: "mov")
+let path = Bundle.main.path(forResource: "CES2014", withExtension: "mov")
 ```
 
 
