@@ -1,6 +1,6 @@
 # Bundle/Document 读取
 
-读取main Bundle下的文件：
+##### 读取main Bundle下的文件：
 
 !FILENAME testBundle.swift
 
@@ -9,7 +9,9 @@ let url = Bundle.main.url(forResource: "CES2014", withExtension: "mov")
 let path = Bundle.main.path(forResource: "CES2014", withExtension: "mov")
 ```
 
-读取document下的文件：
+---
+
+##### 读取document下的文件：
 
 !FILENAME testDocument.swift
 
