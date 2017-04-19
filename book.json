@@ -3,7 +3,7 @@
     "pluginsConfig": {
         "disqus": {
             "shortName": "swiftprogramming"
-        }
+        },
         "prism": {
             "css": [
                 "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
