@@ -3,7 +3,7 @@
     "pluginsConfig": {
         "disqus": {
             "shortName": "swiftprogramming"
-        }
+        },
         "tbfed-pagefooter": {
         "copyright":"Copyright &copy zhangjikai.com 2017",
         "modify_label": "该文件修订时间：",
