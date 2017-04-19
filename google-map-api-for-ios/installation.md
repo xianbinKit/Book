@@ -1,8 +1,6 @@
 # Install Google SDK
 
-follow : https://developers.google.com/maps/documentation/ios-sdk/start
-
-
+follow : [https://developers.google.com/maps/documentation/ios-sdk/start](https://developers.google.com/maps/documentation/ios-sdk/start)
 
 ##### RESUME
 
