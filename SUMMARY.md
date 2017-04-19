@@ -14,5 +14,6 @@
   * [\[tips\]Dispatch in viewDidLoad\(\)](life-cycle/tipsdispatch-in-viewdidload.md)
 * [Third Part Tools](third-part-tools.md)
 * [Google Map API for iOS](google-map-api-for-ios.md)
+  * [Installation](google-map-api-for-ios/installation.md)
 * Google Map API for iOS
 
