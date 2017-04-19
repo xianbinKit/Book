@@ -1,5 +1,5 @@
 {
-    "plugins": ["disqus","codeblock-filename","-lunr", "-search", "search-pro","prism","-highlight","splitter"],
+    "plugins": ["disqus","codeblock-filename","-lunr", "-search", "search-pro","splitter","prism","-highlight"],
     "pluginsConfig": {
         "disqus": {
             "shortName": "swiftprogramming"
