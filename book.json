@@ -1,8 +1,14 @@
 {
-    "plugins": ["disqus","codeblock-filename","-lunr", "-search", "search-pro"],
+    "plugins": ["disqus","codeblock-filename","-lunr", "-search", "search-pro","prism","-highlight"
+]
     "pluginsConfig": {
         "disqus": {
             "shortName": "swiftprogramming"
+        }
+        "prism": {
+            "css": [
+                "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
+            ]
         }
     }
 }
