@@ -3,6 +3,6 @@
     "pluginsConfig": {
         "disqus": {
             "shortName": "swiftprogramming"
-        },
+        }
     }
 }
