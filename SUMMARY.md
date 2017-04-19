@@ -10,6 +10,8 @@
   * [PHAsset](photos/phasset.md)
 * [KVO KeyPath](kvo-keypath.md)
   * [Example 例子](kvo-keypath/example-li-zi.md)
+* [Life Cycle](life-cycle.md)
+  * [\[tips\]Dispatch in viewDidLoad\(\)](life-cycle/tipsdispatch-in-viewdidload.md)
 * [Third Part Tools](third-part-tools.md)
 * [book.json](bookjson.md)
 

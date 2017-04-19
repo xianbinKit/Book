@@ -1,4 +1,4 @@
-```
+```json
 {
     "plugins": ["disqus","codeblock-filename","-lunr", "-search", "search-pro","splitter","tbfed-pagefooter","todo"],
     "pluginsConfig": {
@@ -15,7 +15,6 @@
         }
     }
 }
-
 ```
 
 
