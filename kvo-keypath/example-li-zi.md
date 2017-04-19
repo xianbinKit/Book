@@ -1,6 +1,6 @@
 # KVO的例子
 
-##### 添加
+##### 添加 
 
 ```swift
 // map view observer for updating current position
@@ -13,7 +13,7 @@
 被观察者：mapView 添加一个观察者\(addObserver\).  
 观察者：self \(当前viewControler或者其他Object\).  
 被观察的值\(keyPath\): myLocation \(被观察者的值，MapView.myLocation\).  
-要观察的属性:NSKeyValueObservingOptions.new,有新值，旧值等等. 
+要观察的属性:NSKeyValueObservingOptions.new,有新值，旧值等等.
 
 ##### 通知\(回调\)
 
