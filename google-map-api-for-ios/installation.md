@@ -11,8 +11,6 @@ pod 'GoogleMaps'
 pod 'GooglePlaces'
 ```
 
-
-
 ##### Integrate in Project
 
 按以下步骤向`AppDelegate.swift`添加 API 密钥：
