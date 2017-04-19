@@ -1,5 +1,11 @@
 # CocoaPods
 
+##### In your project root
+
+```
+cd <YOUR_PROJECT_ROOT_PATH>
+```
+
 ##### Init
 
 ```
