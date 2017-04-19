@@ -17,4 +17,5 @@
   * [Installation](google-map-api-for-ios/installation.md)
 * [Google Map API for iOS](google-map-api-for-ios.md)
 * [book.json](bookjson.md)
+* [CocoaPods](cocoapods.md)
 
