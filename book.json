@@ -1,16 +1,8 @@
 {
-    "plugins": ["disqus","codeblock-filename","-lunr", "-search", "search-pro","splitter","prism","-highlight"],
+    "plugins": ["disqus","codeblock-filename","-lunr", "-search", "search-pro","splitter"],
     "pluginsConfig": {
         "disqus": {
             "shortName": "swiftprogramming"
         },
-        "prism": {
-            "css": [
-                "prism-themes/themes/prism-okaidia.css"
-            ],
-            "lang": {
-              "swift": "typescript"
-            }
-        }
     }
 }
