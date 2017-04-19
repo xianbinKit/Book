@@ -1,4 +1,4 @@
-# CocoaPods
+# CocoaPods 简明
 
 ##### In your project root
 
