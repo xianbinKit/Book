@@ -27,7 +27,5 @@ override func viewDidLoad() {
     }
 ```
 
- 这个方法创建MapView的时候，好处是mapView是可以隐藏不显示的。当然这样的方法就是在viewController下面有两个View.一个、\`\`\`self.view\`\`\`,
-
-
+这个方法创建MapView的时候，好处是mapView是可以隐藏不显示的。当然这样的方法就是在viewController下面有两个View.一个\`self.view\`,
 
