@@ -21,7 +21,7 @@
       "modify_format": "YYYY-MM-DD HH:mm:ss"
       },
    "prism": {
-      "css": ["prism-themes/themes/prism-hopscotch.css"]},
+      "css": ["prism-themes/assets/css/prism/prism-base16-ocean.dark.css"]},
       "lang": {"swift": "typescript"},
    "theme-default": {"showLevel": true}
    }
