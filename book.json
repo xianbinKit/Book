@@ -1,6 +1,19 @@
 {
-    "plugins": ["disqus","codeblock-filename","-lunr", "-search", "search-pro","splitter","tbfed-pagefooter","todo"],
-    "pluginsConfig": {
+"plugins": 
+[
+"-lunr",
+"-search",
+"-highlight",
+"disqus",
+"codeblock-filename",  
+"search-pro",
+"splitter",
+"tbfed-pagefooter",
+"prism",
+"prism-themes",
+"todo"],
+
+"pluginsConfig": {
         "disqus": {
             "shortName": "swiftprogramming"
         },
