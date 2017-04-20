@@ -21,7 +21,7 @@
       "modify_format": "YYYY-MM-DD HH:mm:ss"
       },
    "prism": {
-      "css": ["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},
+      "css": ["prism-themes/themes/prism-hopscotch.css"]},
    "theme-default": {"showLevel": true}
    }
 }
