@@ -67,7 +67,6 @@ extension MapViewController: CLLocationManagerDelegate {
     print("Error: \(error)")
   }
 }
-
 ```
 
 
