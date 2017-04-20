@@ -13,17 +13,15 @@
 "prism-themes",
 "todo"],
 
-"pluginsConfig": {
-        "disqus": {
-            "shortName": "swiftprogramming"
-        },
-        "tbfed-pagefooter": {
-        "copyright":"Copyright &copy Xianbin Lin 2017",
-        "modify_label": "Modified time：",
-        "modify_format": "YYYY-MM-DD HH:mm:ss"
-        },
-        "theme-default": {
-             "showLevel": true
-        }
-    }
+   "pluginsConfig": {
+   "disqus": { "shortName": "swiftprogramming"},
+   "tbfed-pagefooter": {     
+      "copyright":"Copyright &copy Xianbin Lin 2017",
+      "modify_label": "Modified time：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
+      },
+   "prism": {
+      "css": ["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"],
+   "theme-default": {"showLevel": true}
+   }
 }
