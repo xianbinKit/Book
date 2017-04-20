@@ -16,6 +16,7 @@
 * [Google Map API for iOS](/google-map-api-for-ios.md)
   * [Quick Start](google-map-api-for-ios/installation.md)
   * [MapView](google-map-api-for-ios/mapview.md)
+  * [Request Auth](google-map-api-for-ios/request-auth.md)
 * [book.json](bookjson.md)
 * [CocoaPods](cocoapods.md)
 
