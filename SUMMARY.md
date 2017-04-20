@@ -19,6 +19,7 @@
   * [Request Auth](google-map-api-for-ios/request-auth.md)
   * [Marker](google-map-api-for-ios/marker.md)
   * [Current Position](google-map-api-for-ios/current-position.md)
+  * [GMSMapViewDelegate](google-map-api-for-ios/gmsmapviewdelegate.md)
 * [book.json](bookjson.md)
 * [CocoaPods](cocoapods.md)
 
