@@ -24,5 +24,4 @@
 * [SwiftyJSON](swiftyjson.md)
 * [book.json](bookjson.md)
 * [CocoaPods](cocoapods.md)
-* Core Motion
 
