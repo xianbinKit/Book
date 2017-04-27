@@ -12,6 +12,7 @@
   * [Example 例子](kvo-keypath/example-li-zi.md)
 * [Life Cycle](life-cycle.md)
   * [\[tips\]Dispatch in viewDidLoad\(\)](life-cycle/tipsdispatch-in-viewdidload.md)
+* [Core Motion](core-motion.md)
 * [Third Part Tools](third-part-tools.md)
 * [Google Map API for iOS](/google-map-api-for-ios.md)
   * [Quick Start](google-map-api-for-ios/installation.md)
@@ -23,6 +24,5 @@
 * [SwiftyJSON](swiftyjson.md)
 * [book.json](bookjson.md)
 * [CocoaPods](cocoapods.md)
-* [Questions](questions.md)
-  * [OS\_ACTIVITY\_MODE](osactivity-mode.md)
+* Core Motion
 
