@@ -24,7 +24,7 @@ func deviceDidRotate() {
         // Respond to changes in orientation here
         previousDeviceOrientation = UIDevice.current.orientation
         print("deviceDidRotate",previousDeviceOrientation.rawValue)
-        
+
 }
 ```
 
@@ -54,8 +54,6 @@ public enum UIDeviceOrientation : Int {
 
 ##### Stop
 
-
-
 ```swift
 func stopOrientationObserver(){
         // Stop receiving orientation change notifications
@@ -65,7 +63,5 @@ func stopOrientationObserver(){
 }
 ```
 
-stopOrientationObserver\(\) 一般 viewDidDisappear\(\) 里调用。
-
-
+`stopOrientationObserver()` 一般 `viewDidDisappear()` 里调用。
 
