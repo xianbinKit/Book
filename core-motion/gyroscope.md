@@ -1,8 +1,8 @@
 # ios Swift Gyroscope 陀螺仪 详解
 
+##### Start
 
-
-```
+```swift
 func startGyroscopeUpdates() {
         // Check whether the gyroscope is available
         if self.motionManager.isGyroAvailable {
@@ -24,11 +24,24 @@ func startGyroscopeUpdates() {
                     print(String(format: "Rotation In Y : %.2f", rotation.y))
                     print(String(format: "Rotation In Z : %.2f", rotation.z))
                 }
-                
+
             }
         }
     }
+```
 
+
+
+##### Stop
+
+```swift
+func stopUpdates() {
+    // Check whether the gyroscope is actived
+    if self.motionManager.isGyroActive {
+        // stop gyroscope updates
+        self.motionManager.stopGyroUpdates()
+    }
+}
 ```
 
 
