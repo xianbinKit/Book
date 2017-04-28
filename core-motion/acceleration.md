@@ -11,7 +11,7 @@ override func viewDidLoad() {
 
 func startAccelerometerUpdates() {
         // Check whether the accelerometer is available
-        guard self.motionManager.isDeviceMotionAvailable else { return }
+        guard self.motionManager.isAccelerometerAvailable else { return }
         // Update the recurring update interval
         let updateInterval = 0.2
         self.motionManager.accelerometerUpdateInterval = updateInterval

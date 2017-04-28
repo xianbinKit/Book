@@ -11,6 +11,7 @@ override func viewDidLoad() {
 
 func startGyroscopeUpdates() {
         // Check whether the gyroscope is available
+        guard self.motionManager.isGyroAvailable else { return }
         if self.motionManager.isGyroAvailable {
             // Update the recurring update interval
             let updateInterval = 0.2
