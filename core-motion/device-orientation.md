@@ -63,5 +63,6 @@ func stopOrientationObserver(){
 }
 ```
 
-`stopOrientationObserver()` 一般 `viewDidDisappear()` 里调用。
+`stopOrientationObserver()` 一般 `viewDidDisappear()` 里调用。  
+在不需要时停用，可以节约电，比如在切换到一个不需要设备旋转的view时。
 
