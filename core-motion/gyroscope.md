@@ -3,6 +3,12 @@
 ##### Start
 
 ```swift
+override func viewDidLoad() {
+    super.viewDidLoad()
+    motionManager = CMMotionManager()
+    ...
+}
+
 func startGyroscopeUpdates() {
         // Check whether the gyroscope is available
         if self.motionManager.isGyroAvailable {
@@ -42,9 +48,7 @@ func stopUpdates() {
 }
 ```
 
-
-
 ## Gyroscope 数据
 
- 数据形式和Acceleration一样，具体请看 [Acceleration](/core-motion/acceleration.md) .
+数据形式和Acceleration一样，具体请看 [Acceleration](/core-motion/acceleration.md) .
 
