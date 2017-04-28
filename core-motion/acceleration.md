@@ -13,6 +13,10 @@ func startAccelerometerUpdates() {
             self.motionManager.startAccelerometerUpdates(to: OperationQueue.main) {
                 // if not update UI elements for ex: self.view, delete [weak self]
                 [weak self] (accelerometerData, error) in
+                // Handle error
+                if let e = error {
+                    print(e.localizedDescription)
+                }
                 // Handler to process accelerometer data
                 if let acceleration = accelerometerData?.acceleration{
                     // Handle acceleration
@@ -38,15 +42,9 @@ func stopUpdates() {
 }
 ```
 
-
-
 ## 加速计数据
 
 ![](/assets/img_acceleration_orientation.png)
 
-
-
 由此方法得到的数据是包含了重力\(Gravity g ~= 0.98\)的，方向始终向下。可以用这个重力在xyz的分量来计算iPhone的倾斜。但是在 device Motion 章节有更好的方法。
-
-
 
