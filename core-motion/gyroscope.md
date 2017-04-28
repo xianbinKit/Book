@@ -30,8 +30,6 @@ func startGyroscopeUpdates() {
     }
 ```
 
-
-
 ##### Stop
 
 ```swift
@@ -45,4 +43,8 @@ func stopUpdates() {
 ```
 
 
+
+## Gyroscope 数据
+
+ 数据形式和Acceleration一样，具体请看 [Acceleration](/core-motion/acceleration.md) .
 
