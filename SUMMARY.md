@@ -13,6 +13,7 @@
 * [Life Cycle](life-cycle.md)
   * [\[tips\]Dispatch in viewDidLoad\(\)](life-cycle/tipsdispatch-in-viewdidload.md)
 * [Core Motion](core-motion.md)
+  * [Device Orientation](core-motion/device-orientation.md)
 * [Third Part Tools](third-part-tools.md)
 * [Google Map API for iOS](/google-map-api-for-ios.md)
   * [Quick Start](google-map-api-for-ios/installation.md)
