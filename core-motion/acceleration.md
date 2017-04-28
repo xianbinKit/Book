@@ -35,7 +35,7 @@ func startAccelerometerUpdates() {
 ```swift
 func stopUpdates() {
     // Check whether the accelerometer is actived
-    if self.motionManager.accelerometerActive {       
+    if self.motionManager.isAccelerometerActive {       
         // stop accelerometer updates
         self.motionManager.stopAccelerometerUpdates()   
     }
