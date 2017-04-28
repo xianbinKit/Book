@@ -1,7 +1,5 @@
 # ios Swift Acceleration 加速测量
 
-
-
 ##### Start
 
 ```swift
@@ -22,13 +20,11 @@ func startAccelerometerUpdates() {
                     print(String(format: "Acceleration In Y : %.2f", acceleration.y))
                     print(String(format: "Acceleration In Z : %.2f", acceleration.z))
                 }
-                
+
             }
         }
 }
 ```
-
-
 
 ##### Stop
 
@@ -43,6 +39,14 @@ func stopUpdates() {
 ```
 
 
+
+## 加速计数据
+
+![](/assets/img_acceleration_orientation.png)
+
+
+
+由此方法得到的数据是包含了重力\(Gravity g ~= 0.98\)的，方向始终向下。可以用这个重力在xyz的分量来计算iPhone的倾斜。但是在 device Motion 章节有更好的方法。
 
 
 
