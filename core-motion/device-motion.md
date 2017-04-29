@@ -101,13 +101,53 @@ attribute的数据是持久的，所有变化都相对于startUpdate 时的状�
 
 在做pitch运动时，会改变yaw和roll的值，比如当手机直立前后pitch时，其实也做了yaw和roll运动，因为手机的面一会朝上，一会朝下。所以pitch的取值范围只有2 \* PI/2, 然后根据yaw和roll的值来做具体判断。
 
- 更多关于欧拉角（Euler angles）和四元数（Quaternion）请到 [这里](/core-motion/euler-angles-and-quaternion.md) 。
-
-
+更多关于欧拉角（Euler angles）和四元数（Quaternion）请到 [这里](/core-motion/euler-angles-and-quaternion.md) 。
 
 ##### rotation
 
 和Gyroscope得到的值一样。
+
+
+
+
+
+
+
+```swift
+/*
+ *  CMAttitudeReferenceFrame
+ *  
+ *  Discussion:
+ *    CMAttitudeReferenceFrame indicates the reference frame from which all CMAttitude
+ *        samples are referenced.
+ *
+ *    Definitions of each reference frame is as follows:
+ *        - CMAttitudeReferenceFrameXArbitraryZVertical describes a reference frame in
+ *          which the Z axis is vertical and the X axis points in an arbitrary direction
+ *          in the horizontal plane.
+ *        - CMAttitudeReferenceFrameXArbitraryCorrectedZVertical describes the same reference
+ *          frame as CMAttitudeReferenceFrameXArbitraryZVertical with the following exception:
+ *          when available and calibrated, the magnetometer will be used to correct for accumulated
+ *          yaw errors. The downside of using this over CMAttitudeReferenceFrameXArbitraryZVertical
+ *          is increased CPU usage.
+ *        - CMAttitudeReferenceFrameXMagneticNorthZVertical describes a reference frame
+ *          in which the Z axis is vertical and the X axis points toward magnetic north.
+ *          Note that using this reference frame may require device movement to 
+ *          calibrate the magnetometer.
+ *        - CMAttitudeReferenceFrameXTrueNorthZVertical describes a reference frame in
+ *          which the Z axis is vertical and the X axis points toward true north.
+ *          Note that using this reference frame may require device movement to 
+ *          calibrate the magnetometer.
+ */
+public struct CMAttitudeReferenceFrame : OptionSet {
+
+    public init(rawValue: UInt)
+    public static var xArbitraryZVertical: CMAttitudeReferenceFrame { get }
+    public static var xArbitraryCorrectedZVertical: CMAttitudeReferenceFrame { get }
+    public static var xMagneticNorthZVertical: CMAttitudeReferenceFrame { get }
+    public static var xTrueNorthZVertical: CMAttitudeReferenceFrame { get }
+}
+```
 
 
 
