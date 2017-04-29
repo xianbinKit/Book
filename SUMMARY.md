@@ -17,6 +17,7 @@
   * [Acceleration](core-motion/acceleration.md)
   * [Gyroscope](core-motion/gyroscope.md)
   * [Device Motion](core-motion/device-motion.md)
+  * [Euler angles and Quaternion](core-motion/euler-angles-and-quaternion.md)
 * [Third Part Tools](third-part-tools.md)
 * [Google Map API for iOS](/google-map-api-for-ios.md)
   * [Quick Start](google-map-api-for-ios/installation.md)
