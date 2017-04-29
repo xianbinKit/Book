@@ -63,5 +63,13 @@ func stopUpdates() {
 }
 ```
 
+updateInterval 可以一个公用的变量，这样可以用到 acceleration 和gyroscope里，保持相同的更新频率。
+
+ 更新频率越快，耗电越快。
+
+* 1/10    普通的view更新
+* 1/60   游戏视频实时更新
+* 更高的。。。
+
 
 
