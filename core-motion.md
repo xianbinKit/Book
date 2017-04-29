@@ -1,4 +1,13 @@
-# Core Motion 详解
+# // Check whether the accelerometer is available
+
+```swift
+        guard self.motionManager.isAccelerometerAvailable else { return }
+        // Update the recurring update interval
+        let updateInterval = 0.2
+        self.motionManager.accelerometerUpdateInterval = updateInterval
+        // Start accelerometer updates
+Core Motion 详解
+```
 
 * Device Orientation
 * Gyroscope
@@ -14,8 +23,12 @@ Core Motion Manager 有两种获取数据的方式 **PULL** 和 **PUSH.  **因�
 
 ```swift
 func startAccelerateUpdate(){
+    // Check whether the accelerometer is available
+    guard self.motionManager.isAccelerometerAvailable else { return }
+    // Update the recurring update interval
     let updateInterval = 0.2
     self.motionManager.accelerometerUpdateInterval = updateInterval
+    // Start accelerometer updates
     self.motionManager.startAccelerometerUpdates()    
 }
 ```
@@ -34,6 +47,18 @@ func pullAccelerationData(){
         print(String(format: "Acceleration In X : %.2f", acceleration.x))
         print(String(format: "Acceleration In Y : %.2f", acceleration.y))
         print(String(format: "Acceleration In Z : %.2f", acceleration.z))
+    }
+}
+```
+
+##### Stop
+
+```swift
+func stopUpdates() {
+    // Check whether the accelerometer is actived
+    if self.motionManager.isAccelerometerActive {       
+        // stop accelerometer updates
+        self.motionManager.stopAccelerometerUpdates()   
     }
 }
 ```
