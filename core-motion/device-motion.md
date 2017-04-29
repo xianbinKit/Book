@@ -107,11 +107,16 @@ attribute的数据是持久的，所有变化都相对于startUpdate 时的状�
 
 和Gyroscope得到的值一样。
 
+## 更精准的测量
 
+```swift
+self.motionManager.startDeviceMotionUpdates(using: <#T##CMAttitudeReferenceFrame#>, 
+to: <#T##OperationQueue#>, 
+withHandler: <#T##CMDeviceMotionHandler##CMDeviceMotionHandler##(CMDeviceMotion?, Error?) -> Void#>)
 
+```
 
-
-
+ 这个函数允许赋予referenceFrame, 可以更加精准的测量，借助指南针修正误差，所有选下如下。
 
 ```swift
 /*
