@@ -61,8 +61,6 @@ func startDeviceMotionUpdates(){
     }
 ```
 
-
-
 ##### Stop
 
 ```swift
@@ -79,19 +77,19 @@ func stopUpdates() {
 
 ##### userAcceleration
 
- 这个数据是acceleration 不包含重力的数据。数据是瞬时数据。
+这个数据是acceleration 不包含重力的数据。数据是瞬时数据。
 
 ##### gravity
 
- 可以获取重力在xyz方向上的分量
+可以获取重力在xyz方向上的分量
 
 ##### attribute
 
- attribute的数据是持久的，所有变化都相对于startUpdate 时的状态进行改变。
+attribute的数据是持久的，所有变化都相对于startUpdate 时的状态进行改变。
 
-* yaw :  围绕Z轴旋转，逆时针为正，顺势正为负。值在\[-PI,+PI\]之间, 旋转-180度和旋转+180度是同一个位置。
+* yaw :  围绕Z轴旋转，逆时针为正，顺势正为负。值在\[-PI,+PI\]之间, 旋转-180度和旋转+180度是同一个位置。以startUpdate时刻手机的方向为0，之后数值的变化都相对于这个初始位置。
+* roll : 围绕Y轴旋转，面向右转为正，反之为负。值在\[-PI,+PI\]之间, 旋转-180度和旋转+180度是同一个位置\(背面朝上的位置\)。 以平方手机，面朝上为初始0。
+* pitch :  围绕X轴旋转，面向自己旋转为正，反之为负。值在\[-Pi/2,+PI/2\]之间。以平方手机，面朝上为初始0。
 
-
-
-
+在做pitch运动时，会改变yaw和roll的值，比如当手机直立前后pitch时，其实也做了yaw和roll运动，因为手机的面一会朝上，一会朝下。所以pitch的取值范围只有2 \* PI/2, 然后根据yaw和roll的值来做具体判断。
 
