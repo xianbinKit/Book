@@ -99,13 +99,15 @@ attribute的数据是持久的，所有变化都相对于startUpdate 时的状�
 
 ![](/assets/image_pitch.gif)
 
-
-
 在做pitch运动时，会改变yaw和roll的值，比如当手机直立前后pitch时，其实也做了yaw和roll运动，因为手机的面一会朝上，一会朝下。所以pitch的取值范围只有2 \* PI/2, 然后根据yaw和roll的值来做具体判断。
 
+ 更多关于欧拉角（Euler angles）和四元数（Quaternion）请到 [这里](/core-motion/euler-angles-and-quaternion.md) 。
 
 
 
+##### rotation
+
+和Gyroscope得到的值一样。
 
 
 
