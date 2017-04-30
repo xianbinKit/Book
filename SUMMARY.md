@@ -31,4 +31,5 @@
 * [CocoaPods](cocoapods.md)
 * [Questions](questions.md)
   * [CA restriction Debug information](questions/ca-restriction-debug-information.md)
+* [Hacking on Lyft](hacking-on-lyft.md)
 
