@@ -1,5 +1,13 @@
 # SwiftyJSON 使用
 
+##### Install with cocoapods
+
+```
+pod 'SwiftyJSON'
+```
+
+##### 
+
 ##### Create JSON object from a JSON file
 
 ```swift
@@ -8,8 +16,6 @@ guard let data = try? Data(contentsOf: userJsonURL) else { return } // deal with
 let json = JSON(data: data)
 // handle your json obejct
 ```
-
-
 
 ##### Create JSON object from http download
 
