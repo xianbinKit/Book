@@ -38,8 +38,6 @@ let json = JSON(data: data)
         }.resume()
 ```
 
-
-
 ##### Create JSON from string
 
 ```swift
@@ -47,8 +45,6 @@ if let dataFromString = jsonString.data(using: .utf8, allowLossyConversion: fals
     let json = JSON(data: dataFromString)
 }
 ```
-
-
 
 ##### JSON object 的类型
 
@@ -85,7 +81,7 @@ for (index,subJson):(String, JSON) in json {
 }
 ```
 
- 当然不是所有时候我们都需要key或者index的值，我们可以用\_替换，也可以直接拿到subJson的数组.
+当然不是所有时候我们都需要key或者index的值，我们可以用\_替换，也可以直接拿到subJson的数组.
 
 ```swift
 json["coordinate"].array        // 返回一个[JSON]?
@@ -97,9 +93,9 @@ json["coordinate"].arrayValue.map{$0}
 
 ##### Option值和non-Option值
 
- swiftyJSON很方便的处理这两种值。 
+swiftyJSON很方便的处理这两种值。
 
-区别就在于 `string `和 `stingValue`. 
+区别就在于 `string`和 `stingValue`.
 
 ```swift
 // Option
@@ -114,7 +110,7 @@ if let id = json["user"]["favourites_count"].number {
 let id = json["user"]["favourites_count"].numberValue
 ```
 
- 在读取Non-Option值时，如果值为nil，将会给一个默认值。一下是对应表。
+在读取Non-Option值时，如果值为nil，将会给一个默认值。一下是对应表。
 
 | 类型 | Option | Non-Option | 默认值 |
 | :--- | :--- | :--- | :--- |
@@ -124,13 +120,9 @@ let id = json["user"]["favourites_count"].numberValue
 | Double | .double | .doubleValue | 0.0 |
 | Array | .array | .arrayValue | \[\] |
 
-
-
-
-
 ##### json 读取
 
- 可以知道，json只有 key-value或则index-value两种形式，所以可以像下面这样取到想要的值。
+可以知道，json只有 key-value或则index-value两种形式，所以可以像下面这样取到想要的值。
 
 ```swift
 //Just the same
@@ -138,8 +130,6 @@ let name = json[1]["list"][2]["name"].string
 //Alternatively
 let name = json[1,"list",2,"name"].string
 ```
-
-
 
 ### JSON 文件格式
 
@@ -164,11 +154,21 @@ let name = json[1,"list",2,"name"].string
             "title" : "title12"
         }
     ]
-    
+
 }
 ```
 
 json都是以key-value形式出现的，值可以是数字，字符串，也可以是数组，数组里面的值可以是数字，字符串，数组，甚至是另一个json。
+
+
+
+### [JSONSerialization](https://developer.apple.com/reference/foundation/nsjsonserialization) VS [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
+
+
+
+苹果官方的例子 ： https://developer.apple.com/swift/blog/?id=37
+
+
 
 
 
