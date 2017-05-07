@@ -7,7 +7,7 @@
   * [Device Version](systems-info/device-version.md)
 * [GCD 多线程](gcd-duo-xian-cheng.md)
 * [Photos](photos.md)
-  * [PHAsset](photos/phasset.md)
+  * [Photo Library Auth](photos/photo-library-auth.md)
 * [KVO KeyPath](kvo-keypath.md)
   * [Example 例子](kvo-keypath/example-li-zi.md)
 * [Life Cycle](life-cycle.md)
