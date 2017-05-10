@@ -6,6 +6,7 @@
   * [Bundle/Document 读取](/systems-info/21-bundledocument-du-qu.md)
   * [Device Version](systems-info/device-version.md)
 * [UIView](uiview.md)
+  * [Background image](uiview/background-image.md)
 * [GCD 多线程](gcd-duo-xian-cheng.md)
 * [Photos](photos.md)
   * [Photo Library Auth](photos/photo-library-auth.md)
