@@ -52,3 +52,13 @@ FIRApp.configure()
 
 
 
+###  Debug 打印信息
+
+Produst &gt; Scheme &gt; Edit scheme &gt; Run &gt; Arguments &gt; Arguments Passed On launch :
+
+```
+-FIRAnalyticsDebugEnabled
+```
+
+
+
