@@ -2,9 +2,9 @@
 
 [https://firebase.google.com/docs/analytics/ios/start](https://firebase.google.com/docs/analytics/ios/start)
 
-
-
 ### LogEvent
+
+ 用于发送用户的各种动作，比如打开app,  登录，购买，假如许愿单，完成教程，通关等等。
 
 ```swift
 FIRAnalytics.logEvent(withName: kFIREventSelectContent, parameters: [
