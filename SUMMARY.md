@@ -30,6 +30,7 @@
   * [Current Position](google-map-api-for-ios/current-position.md)
   * [GMSMapViewDelegate](google-map-api-for-ios/gmsmapviewdelegate.md)
 * [Firebase](firebase.md)
+  * [Analytics](firebase/analytics.md)
 * [SwiftyJSON](swiftyjson.md)
 * [book.json](bookjson.md)
 * [CocoaPods](cocoapods.md)
