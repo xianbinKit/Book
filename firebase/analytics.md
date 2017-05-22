@@ -42,11 +42,19 @@ Custom Event will not show in Firebase dashboard, but you can filter to find the
 
 ## User Property
 
- 用于收集用户数据，比如年龄层分段，地域，购买习惯等等。
+用于收集用户数据，比如年龄层分段，地域，购买习惯等等。
 
 ##### 自动搜集的用户属性
 
 [https://support.google.com/firebase/answer/6317486](https://support.google.com/firebase/answer/6317486)
 
 注：仅当您的应用链接到[广告支持框架](https://developer.apple.com/library/ios/documentation/DeviceInformation/Reference/AdSupport_Framework/index.html)\(apple AdSupport\)时才会自动收集"年龄"、"性别"和"兴趣"属性。链接到此框架还会自动收集广告标识符 \(IDFA\)。
+
+
+
+```swift
+FIRAnalytics.setUserPropertyString(food, forName: "favorite_food")
+```
+
+注：注册此属性后，它将花几个小时的时间将收集的数据和该属性加入报告中。 当新数据可用时，可以将用户属性作为报告筛选器或目标设备定义。
 
