@@ -18,5 +18,37 @@ To download a config file for an iOS app:
 4. Click![](https://lh3.googleusercontent.com/F_l_k73LFMmhZzlG3uUxR85785RlZFMYIszJFNl6Xq4k_xMLdgotg_O95JGyk8bSlQ=w24)**GoogleService-Info.plist**
    .
 
+##### Import Firebase
+
+* In your Application Delegate file
+
+```swift
+import Firebase
+```
+
+* In your `application:didFinishLaunchingWithOptions` method, create a Firebase shared instance.
+
+```swift
+FIRApp.configure()
+```
+
+| Pod availabale packages |
+| :--- |
+
+
+| Pod | Services |
+| :--- | :--- |
+| pod 'Firebase/Core' | Only Analytics |
+| pod 'Firebase/AdMob' | AdMob |
+| pod 'Firebase/Messaging' | Cloud Messaging / Notifications |
+| pod 'Firebase/Database' | Realtime Database |
+| pod 'Firebase/Invites' | Invites |
+| pod 'Firebase/DynamicLinks' | Dynamic Links |
+| pod 'Firebase/Crash' | Crash Reporting |
+| pod 'Firebase/RemoteConfig' | Remote Config |
+| pod 'Firebase/Auth' | Authentication |
+| pod 'Firebase/AppIndexing' | App Indexing |
+| pod 'Firebase/Storage' | Storage |
+
 
 
