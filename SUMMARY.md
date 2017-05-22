@@ -31,6 +31,8 @@
   * [GMSMapViewDelegate](google-map-api-for-ios/gmsmapviewdelegate.md)
 * [Firebase](firebase.md)
   * [Analytics](firebase/analytics.md)
+  * [Cloud Messaging](firebase/cloud-messaging.md)
+  * [Cloud Functions](firebase/cloud-functions.md)
 * [SwiftyJSON](swiftyjson.md)
 * [book.json](bookjson.md)
 * [CocoaPods](cocoapods.md)
