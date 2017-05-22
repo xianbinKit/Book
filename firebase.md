@@ -2,11 +2,13 @@
 
 ##### Install
 
-1. Install Firebase
+ 1. Install with Pod
 
 ```
 pod 'Firebase'
 ```
 
-2.  
+ 2. 
+
+
 
