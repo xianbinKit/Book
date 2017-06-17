@@ -75,6 +75,8 @@ extension Recipe {
 
 ModelView将Model的数据经过处理后提供给不同的View，并不是所有的View都需要ViewModel, 一些简单的Model也可以直接被View加载。
 
+!FILENAME InstructionViewModel.swift
+
 ```swift
 import Foundation
 
@@ -163,17 +165,18 @@ View可以是一个简单的Cell， 也可以是一个复杂的UIView包含了ta
 
 
 
+### Model 数据的加载
 
+ 只有model的情况
 
 ```swift
 func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RecipeCell.self), for: indexPath) as! RecipeCell
     let recipe = recipes[indexPath.item]
     cell.configureCell(with: recipe)
-    
+
     return cell
   }
-
 ```
 
 
