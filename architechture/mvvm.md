@@ -163,20 +163,19 @@ struct InstructionViewModel {
 
 View可以是一个简单的Cell， 也可以是一个复杂的UIView包含了tableview.
 
-
-
 ### Model 数据的加载
 
- 只有model的情况
+ 只有Model的情况
 
-```swift
-func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RecipeCell.self), for: indexPath) as! RecipeCell
-    let recipe = recipes[indexPath.item]
-    cell.configureCell(with: recipe)
+```
+cell.configure(model)
+```
 
-    return cell
-  }
+有Model和ViewModel的情况
+
+```
+let viewModel = ViewMode(model)
+cell.configure(modelView)
 ```
 
 
