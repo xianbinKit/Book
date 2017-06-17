@@ -165,7 +165,7 @@ View可以是一个简单的Cell， 也可以是一个复杂的UIView包含了ta
 
 ### Model 数据的加载
 
- 只有Model的情况
+只有Model的情况
 
 ```
 cell.configure(model)
@@ -177,6 +177,14 @@ cell.configure(model)
 let viewModel = ViewMode(model)
 cell.configure(modelView)
 ```
+
+
+
+### Controller 数据之间的传递
+
+ 因为页面之间的活动还是在c之间进行的。用prepare for segue.
+
+
 
 
 
