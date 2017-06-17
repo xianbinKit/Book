@@ -32,6 +32,7 @@
   * [Current Position](google-map-api-for-ios/current-position.md)
   * [GMSMapViewDelegate](google-map-api-for-ios/gmsmapviewdelegate.md)
 * [Architechture](architechture.md)
+  * [MVVM](architechture/mvvm.md)
 * [Firebase](firebase.md)
   * [Analytics](firebase/analytics.md)
   * [Cloud Messaging](firebase/cloud-messaging.md)
