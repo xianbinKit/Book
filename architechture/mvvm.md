@@ -165,5 +165,16 @@ View可以是一个简单的Cell， 也可以是一个复杂的UIView包含了ta
 
 
 
+```swift
+func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RecipeCell.self), for: indexPath) as! RecipeCell
+    let recipe = recipes[indexPath.item]
+    cell.configureCell(with: recipe)
+    
+    return cell
+  }
+
+```
+
 
 
