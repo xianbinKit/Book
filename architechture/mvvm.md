@@ -2,7 +2,7 @@
 
 ### Model
 
-Model 负责展示数据库的数据，将各种数据库格式的数据转成swift的格式。不一定要是struct, 也可以是Core data.
+Model 负责展示数据库的数据，将各种数据库格式的数据转成swift的格式。不一定要是struct, 也可以是Core data. Model数据通常是全app唯一的，方便数据库统一管理和更新。
 
 !FILENAME Recipe.swft
 
@@ -71,7 +71,9 @@ extension Recipe {
 }
 ```
 
-### ModelView
+### ViewModel
+
+ModelView将Model的数据经过处理后提供给不同的View，并不是所有的View都需要ViewModel, 一些简单的Model也可以直接被View加载。
 
 
 
