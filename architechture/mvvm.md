@@ -75,11 +75,7 @@ extension Recipe {
 
 ModelView将Model的数据经过处理后提供给不同的View，并不是所有的View都需要ViewModel, 一些简单的Model也可以直接被View加载。
 
-
-
 ```swift
-
-
 import Foundation
 
 enum RecipeInstructionType {
@@ -91,22 +87,22 @@ struct InstructionViewModel {
   var type: RecipeInstructionType
   var ingredientsState = [Bool]()
   var directionsState = [Bool]()
-  
+
   init(recipe: Recipe, type: RecipeInstructionType) {
     self.recipe = recipe
     self.type = type
-    
+
     if let ingredients = recipe.ingredients {
       ingredientsState = [Bool](repeating: false, count:ingredients.count)
     }
-    
+
     if let directions = recipe.directions {
       directionsState = [Bool](repeating: false, count:directions.count)
     }
   }
-  
+
   mutating func numberOfItems() -> Int {
-    
+
     switch type {
     case .ingredient:
       if let ingredients = recipe?.ingredients {
@@ -117,14 +113,14 @@ struct InstructionViewModel {
         return directions.count
       }
     }
-    
+
     return 0
   }
-  
+
   func numberOfSections() -> Int {
     return 1
   }
-  
+
   func itemFor(_ index: Int) -> String? {
     switch type {
     case .ingredient:
@@ -138,7 +134,7 @@ struct InstructionViewModel {
     }
     return nil
   }
-  
+
   func getStateFor(_ index: Int) -> Bool {
     switch type {
     case .ingredient:
@@ -147,7 +143,7 @@ struct InstructionViewModel {
       return directionsState[index]
     }
   }
-  
+
   mutating func selectItemFor(_ index: Int) {
     switch type {
     case .ingredient:
@@ -159,8 +155,15 @@ struct InstructionViewModel {
     }
   }
 }
-
 ```
+
+### View
+
+View可以是一个简单的Cell， 也可以是一个复杂的UIView包含了tableview.
+
+
+
+
 
 
 
