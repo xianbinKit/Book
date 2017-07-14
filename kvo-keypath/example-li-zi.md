@@ -33,7 +33,7 @@ override func observeValue(forKeyPath keyPath: String?, of object: Any?, change:
 
 ##### Context 的作用
 
- 想象一下，假设有一个父类Person, 有两个子类Man和Woman如下。
+想象一下，假设有一个父类Person, 有两个子类Man和Woman如下。
 
 ```swift
 Class Person {
@@ -56,4 +56,24 @@ var women : Woman
 ```
 
 当我们对age进行监听的时候，希望Man类和Woman类分别处理自己的监听，可是age是在他们的公共父类Person里。那到底是谁的observeValue相应呢，可以给context一个数字Int，然后对context进行if判断。
+
+
+
+
+
+##### Remove 删除
+
+```
+deinit {
+    removeObserver(self, forKeyPath: #keyPath(configurationManager.configuration.updatedAt))
+}
+
+// or
+
+deinit {
+        objectToObserve.removeObserver(self, forKeyPath: #keyPath(Foo.bar), context: &observerContext)
+    }
+```
+
+
 
