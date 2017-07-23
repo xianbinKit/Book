@@ -8,9 +8,15 @@
 
 [https://juejin.im/entry/56b60c97816dfa005ae0c0d4](https://juejin.im/entry/56b60c97816dfa005ae0c0d4)
 
-#####  横竖屏解决方案
+##### 横竖屏解决方案
 
-http://jumpingfrog0.github.io/2016/2016-12-22-ios-fill-pit-series-vertical-horizontal-screen/
+[http://jumpingfrog0.github.io/2016/2016-12-22-ios-fill-pit-series-vertical-horizontal-screen/](http://jumpingfrog0.github.io/2016/2016-12-22-ios-fill-pit-series-vertical-horizontal-screen/)
+
+
+
+##### Swift 各种算法
+
+https://github.com/raywenderlich/swift-algorithm-club
 
 
 
